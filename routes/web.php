@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomAutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/login ',[CustomAutController::class,'login']);
+Route::get('/registration',[CustomAutController::class,'registration']);
+
+
+ 
 Route::get('/home', function () {
     return view('home');
 })->name('home');
@@ -42,14 +48,11 @@ Route::get('/contact', function () {
 })->name('contact');
 
 
-Route::name('account.')->group(function () {
-    Route::get('/login ', function () {
-        return view('login');
-    })->name('login');
-    Route::get('/signup ', function () {
-        return view('signup');
-    })->name('signup');
-    Route::get('/profile ', function () {
-        return view('profile');
-    })->name('profile');
-});
+// Route::name('account.')->group(function () {
+//     Route::get('/signup ', function () {
+//         return view('signup');
+//     })->name('signup');
+//     Route::get('/profile ', function () {
+//         return view('profile');
+//     })->name('profile');
+// });

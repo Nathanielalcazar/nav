@@ -1,78 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('temp.nav')
+@section('title','Welcome')
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('images/logologo.png')}}">
-    <!-- <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}"> -->
-    <link rel="stylesheet" href="{{ asset('css/css.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
-
-
-    <head>
-        <title>Gaming App - @yield('title')</title>
-    </head>
-
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-
-
-<body>
-@section('header')
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/"><img src="images/logologo.png" style="width:50px;"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="games">Games</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="feature">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact">Contact</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="login">Login</a>
-          <a class="dropdown-item" href="signup">Sign Up</a>
-          <a class="dropdown-item" href="profile">Profile</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-@show
-
-@section('hero')
+@section('content')
 <section class="hero">
   <div class="hero-content">
     <h1>Welcome to GamingApp</h1>
     <p>Discover a world of endless gaming possibilities.</p>
-    <a href="#" class="btn btn-primary">Play Now</a>
+    <a href="games" class="btn btn-primary">Play Now</a>
   </div>
 </section>
-@show
 
-@section('feature')
+
+
 <section class="features">
   <div class="container">
     <div class="row">
@@ -100,9 +39,9 @@
     </div>
   </div>
 </section>
-@show
 
-@section('game')
+
+
 <section class="games-showcase">
   <div class="container">
     <h2>Games Showcase</h2>
@@ -131,9 +70,8 @@
     </div>
   </div>
 </section>
-@show
 
-@section('testi')
+
 <section class="testimonials">
   <div class="container">
     <h2>Testimonials</h2>
@@ -149,9 +87,9 @@
     </div>
   </div>
 </section>
-@show
 
-@section('about')
+
+
 <section class="about">
   <div class="container">
     <h2>About Us</h2>
@@ -159,9 +97,9 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 </section>
-@show
 
-@section('blog')
+
+
 <section class="blog">
   <div class="container">
     <h2>Latest Blog Posts</h2>
@@ -182,10 +120,10 @@
   </div>
 </section>
 
-@show
 
 
-@section('news')
+
+
 <section class="newsletter">
   <div class="container">
     <h2>Subscribe to Our Newsletter</h2>
@@ -196,46 +134,5 @@
     </form>
   </div>
 </section>
-@show
 
-
-@section('footer')
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="col-md-3">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <h3>Follow Us</h3>
-        <ul class="social-icons">
-          <li><a href="#"><i class="fab fa-facebook">F</i></a></li>
-          <li><a href="#"><i class="fab fa-twitter">T</i></a></li>
-          <li><a href="#"><i class="fab fa-instagram">I</i></a></li>
-          <li><a href="#"><i class="fab fa-youtube">Y</i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-@show
-<!-- Bootstrap JS (Optional) - Needed for dropdown functionality -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+@endsection

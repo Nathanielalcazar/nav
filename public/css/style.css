@@ -1,3 +1,11 @@
+      body{
+        background-image: url('/images/22.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color:rgb(252, 252, 252);
+      }
+      
       /* Navbar Brand */
       .navbar-brand {
         font-size: 1.5rem; /* Adjust the font size as needed */
@@ -25,7 +33,7 @@
       
       /* Hero Section */
       .hero {
-        background-image: url('/images/back.webp'); /* Replace 'background-image.jpg' with the path to your background image */
+        /* background-image: url('/images/back.webp'); Replace 'background-image.jpg' with the path to your background image */
         background-size: cover;
         background-position: center;
         height: 100vh; /* Adjust the height as needed */
@@ -130,7 +138,7 @@
       
       .game-item p {
         font-size: 1rem;
-        color: #666;
+        color: #fafafa;
       }
       
       /* Testimonials Section */
@@ -242,6 +250,12 @@
       
       .newsletter h2 {
         margin-bottom: 20px;
+      }
+
+      .features h2 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        margin-left:500px;
       }
       
       .newsletter p {
@@ -377,7 +391,7 @@ button:hover {
 
 /* Hero section styles */
 .aa {
-    background-image: url('/images/back.webp');
+    /* background-image: url('/images/back.webp'); */
     background-size: cover;
     text-align: center;
     padding: 100px 20px;
